@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<div class="irA">
+		<a href="index.html" style="color: black;"> Volver al la pagina principal</a>
+	  </div>
+    
+    <div class="formDeContacto">
+
+		<div class="formulario">			
+      <h1>Formulario de contacto</h1>
+				<h2>Escríbenos y nos pondremos en contacto</h2>
+					<form>				
+
+						<p class="aviso">
+									<span class="obligatorio"> * </span> los campos son obligatorios. 
+								</p>
+								<p>
+									<label for="nombre"> <b>Nombre</b>
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+								</p>
+							
+								<p>
+									<label for="email"><b>Email</b>
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+								</p>
+						
+								<p>
+									<label for="telefono"> <b>Teléfono</b>
+                                        <span class="obligatorio">*</span>
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="Escribe tu teléfono">
+								</p>					
+							
+								<p>
+									<label for="mensaje"><b>Mensaje</b></label>                     
+                               		  <textarea name="introducir_mensaje" id="mensaje" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar" class="botonEnviar"><p><b>ENVIAR</b></p></button>
+
+													
+						
+					</form>
+		</div>	
+	</div>
+    <footer>
+		<div id="copyright">Copyright&copy; 2022 - Página creada por Toledo Nanci - Todos los derechos reservados
+		</div>
+		
+		<a href="https://wa.me/3415898423?text=¡Estoy+interesado!" ><img src="iconowsp.png"
+				width="50px" > <b>Contactame</b> </a>
+	  
+	  </footer>
+</body>
+</html>

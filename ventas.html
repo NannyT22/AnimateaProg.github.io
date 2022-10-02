@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+  
+  <div class="irA">
+  <a href="index.html" style="color: black;"> Volver al la pagina principal</a>
+<div class="contenedor">
+  <header>
+    
+    <div id="logo">
+      <img src="logo1.jpg" height="300px" alt="logo">
+  </div>
+  
+  </header> 
+</div> 
+
+ <!--Carrusel copiado de bootstrap-->
+</div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="/m.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="mujer1.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="mujer3.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="hombre1.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="hombre2.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="hombre3.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="hombre4.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="niños1.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="niños2.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="niños3.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="niños4.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="amig1.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="amig2.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="amig3.jpg" class="d-block w-10" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="amig4.jpg" class="d-block w-10" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <br>
+    <br>
+    <div class="contenedor">
+    <div class="funcionEnvio">
+    <h1>Calcular el precio final de tu compra</h1>
+    <p>La compra de cada producto tiene un precio de $5000</p>
+
+    <ul>
+        <li>Has clik en el boton calcular</li>
+        <li>Calcula si debes pagar gasto de envio ($800)</li>
+        <li>Ingresa "si o no" segun donde te encuentres</li>
+    </ul>
+    <p>
+        <a class="botonestilo" href="#" role="button" id="boton">Calcular Aqui</a>
+
+    </p>
+</div>
+    <script> var boton = document.getElementById("boton");
+        boton.onclick = function (e) {
+            var usuario = prompt("Se encuentra dentro de San Nicolas o dentro del radio de 40Km?")
+
+            var SNyAlrederor = parseInt(usuario);
+            var precio = 5000
+            var DentrodelRadio = precio;
+            var envio = 800
+            var fueradelRadio = precio + envio;
+            var precio_final;
+            if (usuario == "si") {
+                alert("Su precio final es: $" + precio);
+            }
+            else {
+                alert("Su precio final es: $" + fueradelRadio);
+            }
+        }
+    </script>
+</div>
+<footer>
+  <div id="copyright">Copyright&copy; 2022 - Página creada por Toledo Nanci - Todos los derechos reservados
+  </div>
+  
+  <a href="https://wa.me/3415898423?text=¡Estoy+interesado!" ><img src="iconowsp.png"
+          width="50px" > <b>Contactame</b> </a>
+
+  <div class="irA">
+      <a href="#logo" style="color: rgb(7, 7, 7);">Ir arriba</a>
+  </div>
+</footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
